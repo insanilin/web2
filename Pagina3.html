@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis tennis favoritos de la línea Nike</title>
+    <style>
+        body {
+            background-color: #0000FF; 
+            color: #FFFFFF; 
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        p {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        .main-image {
+            display: block;
+            margin: 0 auto 30px auto;
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .features-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent white */
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .features-table th,
+        .features-table td {
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            padding: 12px 15px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        .features-table th {
+            background-color: rgba(0, 0, 0, 0.3);
+            font-weight: bold;
+        }
+
+        .features-table img {
+            max-width: 150px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border-radius: 4px;
+        }
+
+       
+        @media (max-width: 768px) {
+            .features-table thead {
+                display: none; 
+            }
+
+            .features-table, .features-table tbody, .features-table tr, .features-table td {
+                display: block;
+                width: 100%;
+            }
+
+            .features-table tr {
+                margin-bottom: 15px;
+                border: 1px solid rgba(255, 255, 255, 0.3);
+                border-radius: 8px;
+                padding: 10px;
+                background-color: rgba(255, 255, 255, 0.05);
+            }
+
+            .features-table td {
+                text-align: right;
+                padding-left: 50%;
+                position: relative;
+            }
+
+            .features-table td::before {
+                content: attr(data-label);
+                position: absolute;
+                left: 15px;
+                width: calc(50% - 30px);
+                text-align: left;
+                font-weight: bold;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 15px;
+            }
+
+            .features-table td {
+                padding-left: 15px; 
+                text-align: left;
+            }
+
+            .features-table td::before {
+                position: static;
+                display: block;
+                margin-bottom: 5px;
+            }
+
+            .features-table img {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Mis tennis favoritos de la línea Nike</h2>
+        <p>Estos son los **Nike Jordan 1 OG Low SP X Travis Scott Black Phantom**</p>
+        <img src="travvis 1.jpg" alt="Nike Jordan 1 Travis Scott Black Phantom" class="main-image">
+
+        <section>
+            <h2>Características</h2>
+            <table class="features-table">
+                <thead>
+                    <tr>
+                        <th>Característica</th>
+                        <th>Descripción</th>
+                        <th>Imagen</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Característica">Descripción</td>
+                        <td data-label="Descripción">Travis Scott finalizó 2022 con el regreso de sus emblemáticos Jordan 1 Low, esta vez en una nueva combinación de colores Phantom en negro. La silueta volvió con el distintivo Swoosh de Nike colocado al revés pero con un nuevo diseño de costuras que realza el contraste. Estos sneakers confeccionados con piel nubuck totalmente negra llevan un logo Nike Air en la lengüeta y el logotipo de alas Air Jordan Wings en el talón. Incluyen agujetas en rojo, negro y blanco/negro y tienen una abeja bordada en la lengüeta del talón del sneaker izquierdo que se inspira en la hija de Travis, Stormi.</td>
+                        <td data-label="Imagen"><img src="travis 2.jpg" alt="Detalle del Travis Scott Black Phantom"></td>
+                    </tr>
+                    <tr>
+                        <td data-label="Característica">Herencia</td>
+                        <td data-label="Descripción">Desde su tiro decisivo con el que Carolina del Norte ganó el campeonato, Michael Jordan ha sido todo un referente en el mundo del básquetbol. Saltó a la cancha en 1985 con el Air Jordan I original para revolucionar la liga y superar a sus rivales, además de capturar la imaginación de los fans de todo el mundo.</td>
+                        <td data-label="Imagen"><img src="travis3.jpg" alt="Herencia Air Jordan"></td>
+                    </tr>
+                    <tr>
+                        <td data-label="Característica">Fecha lanzamiento</td>
+                        <td data-label="Descripción">Los Air Jordan 1 Retro Low OG SP Travis Scott Phantom en negro salieron a la venta el 15 de diciembre de 2022.</td>
+                        <td data-label="Imagen"><img src="travis 2.jpg" alt="Fecha de lanzamiento Travis Scott Black Phantom"></td>
+                    </tr>
+                    <tr>
+                        <td data-label="Característica">Gama</td>
+                        <td data-label="Descripción">Alta</td>
+                        <td data-label="Imagen"><img src="travis3.jpg" alt="Gama Alta"></td>
+                    </tr>
+                    <tr>
+                        <td data-label="Característica">Precio</td>
+                        <td data-label="Descripción">$3,799</td>
+                        <td data-label="Imagen"><img src="travvis 1.jpg" alt="Precio Travis Scott Black Phantom"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+</body>
+</html>

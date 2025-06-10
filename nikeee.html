@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia de Nike y Tipos de Calzado</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; 
+            color: #333;
+        }
+        header {
+            background-color: #111;
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        main {
+            padding: 20px 15px;
+            max-width: 1000px; 
+            margin: 0 auto; 
+        }
+        section {
+            background-color: #fff;
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #111;
+            margin-top: 0;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        p {
+            text-align: justify;
+            margin-bottom: 15px;
+        }
+        .foto {
+            display: block; 
+            max-width: 100%; 
+            height: auto; 
+            border-radius: 8px;
+            margin: 20px auto; 
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .tabla {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden; 
+        }
+        .tabla th, .tabla td {
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            text-align: left; 
+            vertical-align: top; 
+        }
+        .tabla th {
+            background-color: #111;
+            color: white;
+            font-weight: bold;
+        }
+        .tabla tr:nth-child(even) {
+            background-color: #f9f9f9; 
+        }
+        .tabla img {
+            max-width: 100px; 
+            height: auto;
+            display: block;
+            margin: 0 auto; 
+            border-radius: 4px;
+        }
+        ul {
+            list-style: none; 
+            padding: 0;
+            margin: 0;
+        }
+        ul li {
+            background-color: #f2f2f2;
+            margin-bottom: 10px;
+            padding: 10px 15px;
+            border-left: 5px solid #111;
+            border-radius: 4px;
+        }
+        ul li strong {
+            color: #111;
+        }
+        footer {
+            background-color: #111;
+            color: white;
+            text-align: center;
+            padding: 15px 10px;
+            margin-top: 30px; 
+            box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
+        }
+
+        
+        @media (max-width: 768px) {
+            main {
+                padding: 15px 10px;
+            }
+            .tabla thead {
+                display: none; 
+            }
+            .tabla, .tabla tbody, .tabla tr, .tabla td {
+                display: block; 
+                width: 100%;
+            }
+            .tabla tr {
+                margin-bottom: 15px;
+                border: 1px solid #ddd;
+                border-radius: 8px;
+                padding: 10px;
+            }
+            .tabla td {
+                text-align: right;
+                padding-left: 50%; 
+                position: relative;
+            }
+            .tabla td::before {
+                content: attr(data-label); 
+                position: absolute;
+                left: 15px;
+                width: calc(50% - 30px); 
+                text-align: left;
+                font-weight: bold;
+                color: #555;
+            }
+            .tabla img {
+                max-width: 80%; 
+                margin-top: 10px; 
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.5em; 
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+            p {
+                font-size: 0.95em;
+            }
+            .tabla td {
+                padding-left: 15px; 
+                text-align: left; 
+            }
+            .tabla td::before {
+                position: static; 
+                display: block;
+                margin-bottom: 5px;
+                width: auto;
+            }
+            .tabla img {
+                max-width: 90%;
+            }
+            ul li {
+                padding: 8px 10px;
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Historia de Nike y Tipos de Calzado</h1>
+</header>
+
+<main>
+    <section>
+        <h2>Historia de Nike</h2>
+        <p>Fundada en 1964 como Blue Ribbon Sports, Nike, Inc. es una de las marcas deportivas más icónicas y reconocidas en el mundo. En 1971, el nombre de la empresa cambió a Nike, inspirado en la diosa griega de la victoria. Desde su comienzo, Nike se ha destacado por su innovación en productos deportivos, especialmente en calzado, ropa y equipo deportivo. A lo largo de los años, ha patrocinado a atletas de renombre y ha mantenido su compromiso con la excelencia y el rendimiento en los deportes.</p>
+        <img src="logo.jpg" alt="Logo de Nike" class="foto">
+        <p>En la actualidad, Nike es sinónimo de calidad, estilo y tecnología avanzada, siendo líder en la fabricación de calzado deportivo para diversas disciplinas como fútbol, baloncesto, running, entre otros.</p>
+    </section>
+
+    <section>
+        <h2>Tipos de Calzado de Nike</h2>
+        <table class="tabla">
+            <thead>
+                <tr>
+                    <th>Tipo de Calzado</th>
+                    <th>Descripción</th>
+                    <th>Imagen</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="Tipo de Calzado">Fútbol</td>
+                    <td data-label="Descripción">Las botas de fútbol Nike están diseñadas para ofrecer velocidad, tracción y confort en el campo. Usadas por futbolistas profesionales.</td>
+                    <td data-label="Imagen"><img src="futbol.jpg" alt="Calzado de Fútbol Nike"></td>
+                </tr>
+                <tr>
+                    <td data-label="Tipo de Calzado">Running</td>
+                    <td data-label="Descripción">El calzado de running Nike combina ligereza y amortiguación para corredores de todos los niveles, brindando comodidad en largas distancias.</td>
+                    <td data-label="Imagen"><img src="running.jpg" alt="Calzado de Running Nike"></td>
+                </tr>
+                <tr>
+                    <td data-label="Tipo de Calzado">Baloncesto</td>
+                    <td data-label="Descripción">Las zapatillas de baloncesto Nike ofrecen soporte, estabilidad y agarre para los movimientos rápidos y los saltos en la cancha.</td>
+                    <td data-label="Imagen"><img src="basket.jpg" alt="Calzado de Baloncesto Nike"></td>
+                </tr>
+                <tr>
+                    <td data-label="Tipo de Calzado">Entrenamiento</td>
+                    <td data-label="Descripción">El calzado de entrenamiento de Nike está diseñado para resistir las exigencias del entrenamiento intenso, proporcionando comodidad y resistencia.</td>
+                    <td data-label="Imagen"><img src="entrenamiento.jpg" alt="Calzado de Entrenamiento Nike"></td>
+                </tr>
+                <tr>
+                    <td data-label="Tipo de Calzado">Casual</td>
+                    <td data-label="Descripción">Las zapatillas casuales de Nike combinan estilo y comodidad para el uso diario, con diseños modernos y materiales de alta calidad.</td>
+                    <td data-label="Imagen"><img src="casual.jpg" alt="Calzado Casual Nike"></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Innovaciones en el Calzado Nike</h2>
+        <p>Nike ha sido pionera en el desarrollo de tecnologías de calzado, entre las que destacan:</p>
+        <ul>
+            <li><strong>Air Max:</strong> Una innovadora tecnología de amortiguación con una cápsula de aire visible, que ofrece confort y soporte en cada paso.</li>
+            <li><strong>Flyknit:</strong> Un material ligero y flexible que se adapta perfectamente al pie, proporcionando soporte donde más se necesita.</li>
+            <li><strong>Zoom:</strong> Tecnología de amortiguación reactiva que proporciona mayor velocidad y respuesta durante actividades de alta intensidad.</li>
+            <li><strong>React:</strong> Suela que ofrece una experiencia de comodidad y flexibilidad superior para los atletas que buscan rendimiento sin sacrificar confort.</li>
+        </ul>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Nike, Inc. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
